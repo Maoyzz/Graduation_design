@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+
+def appName() {
+    return "qiyunlogistics"
+}
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    signingConfigs {
+        android_debug_config {
+            keyAlias 'testkey'
+            keyPassword '123456'
+            storeFile file('C:/Users/10246/Desktop/mao/key/testkeystore.jks')
+            storePassword '123456'
+        }
+        android_default_config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('C:/Users/10246/.android/debug.keystore')
+            storePassword 'android'
+        }
+        android_release_config {
+            keyAlias 'qiyun'
+            keyPassword '123456'
+            storeFile file('C:/Users/10246/Desktop/mao/qiyun.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.android_release_config
+
+        }
+
+        debug {
+            signingConfig signingConfigs.android_default_config
+        }
+
+        prerealease {
+            signingConfig signingConfigs.android_release_config
+//            buildConfigField("String", "API_HOST", "\"http://192.168.0.10:8081\"")
+
+        }
+    }
+
+    flavorDimensions "qiyundim"
+
+    productFlavors {
+        //开发环境
+        develop {
+            versionCode 1
+            versionName "1.0.0.0"
+            dimension "qiyundim"
+        }
+        //生产环境
+        product {
+            versionCode 1
+            versionName "1.0.0"
+            dimension "qiyundim"
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}

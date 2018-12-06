@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ILogistics</string>
+    <string name="test_long">2314645645645446465sadadadadadadasdadqdqqeqdqdqdqdqd
+    asdasdasdadadsdadadadadasdasdasdadasdasdasdadadadasdadsadad</string>
+
+
+    <!--login-->
+    <string name="login_username_hint">请输入账号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_btn">登录</string>
+    <string name="login_forget_pwd">验证码登录</string>
+    <string name="login_sign">前往注册</string>
+
+
+    <string name="login_val_button_count">%1$s s后重新获取</string>
+    <string name="login_val_button">获取验证码</string>
+    <!--login-->
+    <string name="login_val">验证码登录</string>
+
+    <!--signup-->
+    <string name="sign_up">注册</string>
+    <string name="news_sender">发送人：%1$s</string>
+    <string name="news_date">时间：%1$s</string>
+    <string name="rmb">¥:%1$s</string>
+
+    <string name="goods_page1">
+        <![CDATA[
+        <font color="#ff0000">1</font><font color="#333333">/3</font>
+        ]]>
+    </string>
+    <string name="goods_page2">
+        <![CDATA[
+        <font color="#ff0000">2</font><font color="#333333">/3</font>
+        ]]>
+    </string>
+    <string name="goods_page3">
+        <![CDATA[
+        <font color="#ff0000">3</font><font color="#333333">/3</font>
+        ]]>
+    </string>
+    <string name="goodsName">货品名称：%1$s</string>
+    <string name="goodsAttribute">货品属性：%1$s</string>
+    <string name="goodsDescribe">货品描述：%1$s</string>
+    <string name="goodsRemark">货品备注：%1$s</string>
+
+
+
+    <string name="header_icon_message">&#xe808;</string>
+    <string name="header_icon_back">&#xe743;</string>
+    <string name="icon_time">&#xe63a;</string>
+    <string name="icon_talk">&#xe7a2;</string>
+    <string name="icon_goods">&#xe7aa;</string>
+    <string name="icon_news">&#xe65f;</string>
+    <string name="icon_account">&#xe7ba;</string>
+    <string name="icon_me">&#xe7b1;</string>
+    <string name="icon_right_arrow">&#xe742;</string>
+    <string name="icon_fahuo">&#xe635;</string>
+    <string name="icon_carriage">&#xe652;</string>
+    <string name="icon_send">&#xe7a2;</string>
+    <string name="icon_phone">&#xe758;</string>
+    <string name="icon_user">&#xe7b7;</string>
+    <string name="icon_setup">&#xe604;</string>
+
+    <string name="icon_edit">&#xe7bd;</string>
+    <string name="icon_del">&#xe74d;</string>
+    <string name="icon_address">&#xe7ee;</string>
+    <string name="icon_receiver">&#xe636;</string>
+    <string name="icon_add">&#xe745;</string>
+    <string name="icon_remark">&#xe64f;</string>
+
+    <string name="icon_company">&#xe7c7;</string>
+    <string name="icon_search">&#xe747;</string>
+    <string name="icon_goods_cancel">&#xe614;</string>
+    <string name="icon_wait">&#xe846;</string>
+    <string name="icon_navi">&#xe611;</string>
+
+    <string name="login_img_username">&#xe767;</string>
+    <string name="login_img_pwd">&#xe766;</string>
+    <string name="login_img_val">&#xe76b;</string>
+    <string name="login_img_pwd_ag">&#xe768;</string>
+    <string name="icon_car">&#xe620;</string>
+
+
+</resources>

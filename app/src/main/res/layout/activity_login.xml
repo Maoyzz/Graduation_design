@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/img_sign_with_text"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:gravity="center|top">
+
+        <LinearLayout
+            android:id="@+id/ll_username"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_ic_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_img_username"/>
+
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:hint="@string/login_username_hint"
+                android:background="@android:color/white"
+                android:textSize="12sp"
+                android:textColor="#333"
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="260dp"
+            android:layout_height="1dp"
+            android:background="#dbdbdb"
+            android:layout_marginTop="3dp" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_ic_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_img_pwd"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:background="@android:color/white"
+                android:hint="@string/login_pwd_hint"
+                android:textSize="12sp"
+                android:textColor="#333"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="260dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#dbdbdb"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RBtn_User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/icon_user"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/RBtn_Company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/icon_company"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/RBtn_Driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_car"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layout_login"
+        android:layout_above="@id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_forget_pwd"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/view1"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@android:color/darker_gray"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_sign"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/view1" />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_login"
+        android:layout_alignParentBottom="true"
+        android:text="@string/login_btn"
+        android:textColor="@android:color/white"
+        style="?android:attr/borderlessButtonStyle" />
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="design by myz"
+        android:textSize="12sp"
+        android:textColor="#999999" />
+
+</RelativeLayout>

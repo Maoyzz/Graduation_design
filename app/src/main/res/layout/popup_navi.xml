@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/triangle_for_pop"
+        android:id="@+id/view_triangle"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:background="@drawable/pop_background"
+        android:layout_below="@id/view_triangle"
+        android:orientation="vertical"
+        android:layout_width="110dp"
+        android:layout_height="140dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layout_navi1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_navi_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内置导航"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/black_normal"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layout_navi2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_navi_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我有高德"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/black_normal"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/layout_navi3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_navi_starttoend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我有百度"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/img_bg_message">
+
+    <include layout="@layout/layout_header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/layout_goods_list"
+                            android:orientation="vertical"
+                            android:layout_width="145dp"
+                            android:layout_height="145dp"
+                            android:gravity="center"
+                            android:background="@drawable/bg_goods_press"
+                            android:elevation="3dp">
+
+                            <TextView
+                                android:id="@+id/tv_goods_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="60sp"
+                                android:text="@string/icon_goods"/>
+
+                            <TextView
+                                android:id="@+id/tv_goods_list_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="货品列表"
+                                android:textColor="@color/black_dark"
+                                android:textSize="16sp"/>
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_goods_send"
+                        android:orientation="vertical"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_goods_press"
+                        android:elevation="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_goods_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:text="@string/icon_send"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_send_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="寄货"
+                            android:textColor="@color/black_dark"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_goods_fahuo"
+                        android:orientation="vertical"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_goods_press"
+                        android:elevation="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_goods_fahuo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:text="@string/icon_fahuo"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_fahuo_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="派单"
+                            android:textColor="@color/black_dark"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_goods_carriage"
+                        android:orientation="vertical"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_goods_press"
+                        android:elevation="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_goods_carriage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:text="@string/icon_carriage"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_carriage_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="承运"
+                            android:textColor="@color/black_dark"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="100dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_goods_wait"
+                        android:orientation="vertical"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_goods_press"
+                        android:elevation="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_goods_wait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:text="@string/icon_wait"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_wait_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="待确认"
+                            android:textColor="@color/black_dark"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_goods_refuse"
+                        android:orientation="vertical"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_goods_press"
+                        android:elevation="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_goods_refuse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:text="@string/icon_goods_cancel"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_refuse_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="被拒订单"
+                            android:textColor="@color/black_dark"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
